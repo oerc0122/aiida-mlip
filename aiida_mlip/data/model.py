@@ -212,7 +212,7 @@ class ModelData(SinglefileData):
             filters={
                 "attributes.model_hash": model.model_hash,
                 "attributes.architecture": model.architecture,
-                "ctime": {"!in": [model.ctime]},
+#                "ctime": {"!in": [model.ctime]},
             },
             project=["attributes", "pk", "ctime"],
         )
